@@ -2,12 +2,12 @@
     [x] commit
 
 [x] npm init --yes, git init, npm install express pg, npm install body-parser
-    [ ] commit
+    [x] commit
 
 [x] set up folders
-    [ ] commit
+    [x] commit
 
-[ ] build interface frame
+[x] build interface frame
     [ ] commit
 
 [ ] get handshakes working, GET then POST
@@ -28,5 +28,5 @@
 [ ] make complete button style that task/row
     [ ] commit
 
-[ ] other styling
+[ ] other styling (make description input wider)
     [ ] commit
