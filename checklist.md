@@ -11,9 +11,15 @@
     [x] commit
 
 [x] spin up server
+    [x] commit
+
+[ ] do work on a branch, create a pull request, merge the branch
     [ ] commit
 
-[ ] get handshakes working, GET then POST
+[ ] get handshakes GET working
+    [ ] commit
+
+[ ] get handshakes POST working
     [ ] commit
 
 [ ] get user inputs working
