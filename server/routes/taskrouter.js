@@ -34,7 +34,7 @@ taskRouter.post('/', (req, res)=>{
                     VALUES ($1, $2);`;
     pool.query(queryText, [newTask.description, newTask.completed])
         .then((result)=>{
-            console.log('result from put', result);
+            // console.log('result from put', result);
             res.sendStatus(201);
         }).catch((error)=>{
             console.log('error adding new task', error);
