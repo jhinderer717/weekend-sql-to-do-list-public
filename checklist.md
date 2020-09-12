@@ -32,9 +32,9 @@
     [x] commit
 
 [x] don't allow incomplete field submission
-    [ ] commit
+    [x] commit
 
-[ ] make complete button style that task/row
+[x] make complete button style that task/row
     [ ] commit
 
 [ ] other styling (make description input wider)

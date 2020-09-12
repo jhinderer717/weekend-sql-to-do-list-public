@@ -11,14 +11,18 @@
 <body>
     <h1>Weekend To Do List</h1>
     <input type="text" id="taskIn" placeholder="Description">
-    <label for="isComplete">Completed?</label>
-    <input id="completeBox" name="isComplete" type="checkbox">
+    <label for="isComplete">
+        <input id="completeBox" name="isComplete" type="checkbox">
+        Complete
+    </label>
     <button class="addButton">Add Task</button>
     <table>
         <thead>
             <tr>
                 <th>Description</th>
                 <th>Completed?</th>
+                <th>Remove Task</th>
+                <th>Mark Completed</th>
             </tr>
         </thead>
         <tbody class="viewTasks"></tbody>

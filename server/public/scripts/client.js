@@ -12,7 +12,7 @@ function checkDesc(){
     }else{
         postTask();
     }
-}
+} // end checkDesc
 
 function getTasks(){
     console.log('in getTasks');
@@ -24,13 +24,24 @@ function getTasks(){
         console.log('back from GET with:', response);
         let el = $('.viewTasks');
         el.empty();
+        // loop through tasks in database
         for(let i=0; i<response.length; i++){
-            el.append(`<tr>
-                <td>${response[i].description}</td>
-                <td>${response[i].completed}</td>
-                <td><button class="delete" data-id="${response[i].id}">Remove</button></td>
-                <td><button class="complete" data-id="${response[i].id}">Complete</button></td>
-            </tr>`);
+            // add class completedClass if completed datum === true
+            if(response[i].completed === true){
+                el.append(`<tr class="completedClass">
+                    <td>${response[i].description}</td>
+                    <td>${response[i].completed}</td>
+                    <td><button class="delete" data-id="${response[i].id}">Remove</button></td>
+                    <td><button class="complete" data-id="${response[i].id}">Completed</button></td>
+                </tr>`);
+            }else{
+                el.append(`<tr>
+                    <td>${response[i].description}</td>
+                    <td>${response[i].completed}</td>
+                    <td><button class="delete" data-id="${response[i].id}">Remove</button></td>
+                    <td><button class="complete" data-id="${response[i].id}">Completed</button></td>
+                </tr>`);
+            } // end completed check
         } // end for loop
     }).catch(function (err) {
         alert('error!');
@@ -79,6 +90,9 @@ function deleteTask(){
 function completeTask(){
     let taskId = $(this).data('id');
     console.log('mark complete', taskId);
+    // add class to completed task
+    $(this).parent().addClass('completedClass');
+
     $.ajax({
         method: 'PUT',
         url: `/tasks/${taskId}`
