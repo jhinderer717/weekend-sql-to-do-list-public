@@ -23,6 +23,22 @@ taskRouter.get('/', (req, res)=>{
             console.log('error getting books', error);
             res.sendStatus(500);
         });
-});
+}); // end server GET
+
+taskRouter.post('/', (req, res)=>{
+    let newTask = req.body;
+    console.log('adding task', newTask);
+
+    let queryText = `INSERT INTO "tasks" ("description", "completed")
+                    VALUES ($1, $2);`;
+    pool.query(queryText, [newTask.description, newTask.completed])
+        .then((result)=>{
+            console.log('result from put', result);
+            res.sendStatus(201);
+        }).catch((error)=>{
+            console.log('error adding new task', error);
+            res.sendStatus(418); // I'm a teapot error?
+        });
+}); // end server POST
 
 module.exports = taskRouter;

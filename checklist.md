@@ -13,13 +13,13 @@
 [x] spin up server
     [x] commit
 
+[x] get handshakes GET working
+    [x] commit
+
 [x] do work on a branch, create a pull request, merge the branch
     [x] commit
 
-[ ] get handshakes GET working
-    [ ] commit
-
-[ ] get handshakes POST working
+[x] get handshakes POST working
     [ ] commit
 
 [ ] get user inputs working
