@@ -1,14 +1,29 @@
+html{ border: 8px dotted black ;
+    border-top-left-radius: 80px;
+    border-bottom-right-radius: 80px;
+    height: 97%; }
+
 body{
     background-color: silver;
     font-family: 'Trebuchet MS';
 }
 
-h1{ text-align: center; }
+h1{ text-align: center;
+    margin-left: -8px;
+    margin-right: -8px;
+    margin-top: -8px;
+    margin-bottom: 30px;
+    padding: 20px; }
+
+#taskIn{ width: 60%; }
 
 label{ font-size: small; }
 
-table{ border-collapse: collapse; width: 100%; }
+table{ border-collapse: collapse; width: 100%;
+    margin-top: 25px; }
 
 table, th, td{ border: 1px solid black; }
+
+th{ background-color: goldenrod; }
 
 .completedClass{ background-color: rgba(0, 100, 33, 0.63); }

@@ -35,7 +35,7 @@
     [x] commit
 
 [x] make complete button style that task/row
-    [ ] commit
+    [x] commit
 
 [ ] other styling (make description input wider)
     [ ] commit
