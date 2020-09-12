@@ -51,9 +51,33 @@ function postTask(){
 } // end postTask
 
 function deleteTask(){
-    console.log('in deleteTask');
+    let taskId = $(this).data('id');
+    console.log('in deleteTask, deleting', taskId);
+
+    $.ajax({
+        method: 'DELETE',
+        url: `/tasks/${taskId}`
+    }).then(function(response){
+        console.log('deleted,', response);
+        // refresh page
+        getTasks();
+    }).catch(function(err){
+        console.log('error in delete', error);
+        alert("Houston we have a problem");
+    });
 } // end deleteTask
 
 function completeTask(){
-    console.log('in completeTask');
+    let taskId = $(this).data('id');
+    console.log('mark complete', taskId);
+    $.ajax({
+        method: 'PUT',
+        url: `/tasks/${taskId}`
+    }).then(function(response){
+        console.log('response from server', response);
+        getTasks();
+    }).catch(function(err){
+        console.log('error', err);
+        alert('mama mia');
+    });
 } // end completeTask

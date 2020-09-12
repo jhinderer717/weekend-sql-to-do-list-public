@@ -23,9 +23,9 @@
     [x] commit
 
 [x] add buttons for each task
-    [ ] commit
+    [x] commit
 
-[ ] get buttons working: delete, complete
+[x] get buttons working: delete, complete
     [ ] commit
 
 [ ] clear input fields after submitting
