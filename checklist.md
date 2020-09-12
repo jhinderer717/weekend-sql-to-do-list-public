@@ -20,9 +20,9 @@
     [x] commit
 
 [x] get handshakes POST working
-    [ ] commit
+    [x] commit
 
-[ ] get user inputs working
+[x] add buttons for each task
     [ ] commit
 
 [ ] get buttons working: delete, complete

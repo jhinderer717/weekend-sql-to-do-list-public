@@ -2,6 +2,8 @@ $(document).ready(function(){
     console.log('jQ');
     getTasks();
     $('.addButton').on('click', postTask);
+    $(document).on('click', '.delete', deleteTask);
+    $(document).on('click', '.complete', completeTask);
 }) // end doc ready
 
 function getTasks(){
@@ -18,6 +20,8 @@ function getTasks(){
             el.append(`<tr>
                 <td>${response[i].description}</td>
                 <td>${response[i].completed}</td>
+                <td><button class="delete" data-id="${response[i].id}">Remove</button></td>
+                <td><button class="complete" data-id="${response[i].id}">Complete</button></td>
             </tr>`);
         } // end for loop
     }).catch(function (err) {
@@ -28,8 +32,6 @@ function getTasks(){
 
 function postTask(){
     console.log('in postTask');
-
-
     let taskSent = {
         description: $('#taskIn').val(),
         completed: $('input[name=isComplete]').is(":checked")
@@ -47,3 +49,11 @@ function postTask(){
         console.log(err);
     }); // end ajax POST
 } // end postTask
+
+function deleteTask(){
+    console.log('in deleteTask');
+} // end deleteTask
+
+function completeTask(){
+    console.log('in completeTask');
+} // end completeTask
