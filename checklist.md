@@ -8,6 +8,9 @@
     [x] commit
 
 [x] build interface frame
+    [x] commit
+
+[x] spin up server
     [ ] commit
 
 [ ] get handshakes working, GET then POST
