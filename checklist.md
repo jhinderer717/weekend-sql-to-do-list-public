@@ -29,9 +29,9 @@
     [x] commit
 
 [x] clear input fields after submitting
-    [ ] commit
+    [x] commit
 
-[ ] don't allow incomplete field submission
+[x] don't allow incomplete field submission
     [ ] commit
 
 [ ] make complete button style that task/row

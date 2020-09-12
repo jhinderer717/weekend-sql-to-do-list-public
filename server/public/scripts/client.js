@@ -1,10 +1,18 @@
 $(document).ready(function(){
     console.log('jQ');
     getTasks();
-    $('.addButton').on('click', postTask);
+    $('.addButton').on('click', checkDesc);
     $(document).on('click', '.delete', deleteTask);
     $(document).on('click', '.complete', completeTask);
 }) // end doc ready
+
+function checkDesc(){
+    if( $('#taskIn').val() === '' ){
+        console.log('Enter a task');
+    }else{
+        postTask();
+    }
+}
 
 function getTasks(){
     console.log('in getTasks');
@@ -86,4 +94,4 @@ function completeTask(){
 function clearFields(){
     $('#taskIn').val('');
     $('#completeBox').prop("checked", false);
-}
+} // end clearFields
