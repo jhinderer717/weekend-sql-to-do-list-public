@@ -1,7 +1,7 @@
 html{ border: 8px dotted black ;
     border-top-left-radius: 80px;
     border-bottom-right-radius: 80px;
-    height: 97%; }
+    height: 97.5%; }
 
 body{
     background-color: silver;
@@ -9,11 +9,7 @@ body{
 }
 
 h1{ text-align: center;
-    margin-left: -8px;
-    margin-right: -8px;
-    margin-top: -8px;
-    margin-bottom: 30px;
-    padding: 20px; }
+    margin: 45px; }
 
 #taskIn{ width: 60%; }
 
