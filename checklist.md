@@ -39,3 +39,18 @@
 
 [ ] other styling (make description input wider)
     [ ] commit
+
+
+
+CRUD
+
+Create
+Read
+Update
+Delete
+
+HTTP	    English	                SQL
+GET	        Get a list of songs	    SELECT
+POST	    Create a new song	    INSERT
+DELETE	    Remove a song	        DELETE
+PUT	        Modify an existing song	UPDATE
