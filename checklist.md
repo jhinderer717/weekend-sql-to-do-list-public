@@ -14,7 +14,7 @@
     [x] commit
 
 [x] do work on a branch, create a pull request, merge the branch
-    [ ] commit
+    [x] commit
 
 [ ] get handshakes GET working
     [ ] commit
