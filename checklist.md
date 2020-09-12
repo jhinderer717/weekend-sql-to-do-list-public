@@ -26,9 +26,9 @@
     [x] commit
 
 [x] get buttons working: delete, complete
-    [ ] commit
+    [x] commit
 
-[ ] clear input fields after submitting
+[x] clear input fields after submitting
     [ ] commit
 
 [ ] don't allow incomplete field submission

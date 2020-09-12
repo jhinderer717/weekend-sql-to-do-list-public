@@ -44,6 +44,7 @@ function postTask(){
     }).then(function(response){
         console.log('back from POST with:', response);
         getTasks();
+        clearFields();
     }).catch(function(err){
         alert('error!');
         console.log(err);
@@ -64,7 +65,7 @@ function deleteTask(){
     }).catch(function(err){
         console.log('error in delete', error);
         alert("Houston we have a problem");
-    });
+    }); // end ajax DELETE
 } // end deleteTask
 
 function completeTask(){
@@ -79,5 +80,10 @@ function completeTask(){
     }).catch(function(err){
         console.log('error', err);
         alert('mama mia');
-    });
+    }); // end ajax PUT
 } // end completeTask
+
+function clearFields(){
+    $('#taskIn').val('');
+    $('#completeBox').prop("checked", false);
+}
