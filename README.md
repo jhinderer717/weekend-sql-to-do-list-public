@@ -6,3 +6,52 @@ Weekend SQL To Do List
 
 
 Additional README details can be found [here](https://github.com/PrimeAcademy/readme-template/blob/master/README.md).
+
+
+## Screenshots
+
+![screenshot](./filename.png)
+
+or
+
+![demo](./filename.gif)
+
+
+
+
+How to README lecture notes
+
+Docs
+---
+
+- What is it?
+- How to run it?
+- How to use it?
+
+_Duration:_ Weekend Project
+
+## Prerequisites 
+
+Stuff they need installed on their computer before they can run the app
+
+To run this app, you will need:
+
+- Node.js
+- Postgres
+
+## Install
+
+How to setup and run the app
+To run this application:
+
+- Create a databse in postgres called `weekend-to-do-app`
+- Execute the SQL commands from `database.sql`
+- Run `npm install` from the project root directory
+- Run `npm start` to run the node server
+- Open `http://localhost:3000` in your browser
+
+## Usage
+
+Write a to do item in the text box and click _Create!_ to add a new item.
+Click the checkbox next to the item to mark as complete.
+Ckucj the delete button to remove a task.
