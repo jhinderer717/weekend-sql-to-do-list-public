@@ -12,3 +12,11 @@ VALUES
     ('Finish weekend homework', FALSE),
     ('Shoot sub 80 at St. Croix National Sunday morning', FALSE),
     ('Watch the Vikings beat the Packers', FALSE);
+
+
+-- Drop table? Just for me so I know
+/*
+
+DROP TABLE "tablename";
+
+*/
