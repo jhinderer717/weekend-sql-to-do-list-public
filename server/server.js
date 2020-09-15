@@ -1,7 +1,7 @@
 // globals
 const express = require('express');
 const app = express();
-// const pg = require('pg');    not needed
+// const pg = require('pg');    //not needed?
 const bodyParser = require('body-parser');
 const port = process.env.PORT || 4000; // const PORT = process.env.PORT || 5000;
 const taskRouter = require('./routes/taskrouter');
@@ -15,6 +15,6 @@ app.use(express.static('server/public'));
 app.use('/tasks', taskRouter);
 
 // start listening for requests
-app.listen(PORT, ()=>{
+app.listen(port, ()=>{
     console.log(`This is Dr. Mantis Toboggan, M.D. on ${port}`);
 });
