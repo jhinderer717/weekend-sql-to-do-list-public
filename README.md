@@ -1,9 +1,19 @@
-# Project Name
+# Weekend-sql-to-do-list-publix
 
-[Project Instructions](./INSTRUCTIONS.md), this line may be removed once you have updated the README.md
 
 ## Description
 
-Your project description goes here. What problem did you solve? How did you solve it?
+This project let's you add a task to a list. You can select whether or not it is completed when adding the task. You can also mark tasks on the list as completed and that row will be colored green.
 
-Additional README details can be found [here](https://github.com/PrimeAcademy/readme-template/blob/master/README.md).
+## Prerequisites
+
+- Node.js
+
+## Install
+
+- run `npm install`
+- run `npm start`
+
+## Usage
+
+Npm start should open a browser window and load the project. From there you can add a task or mark tasks complete.
